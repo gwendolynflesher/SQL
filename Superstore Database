@@ -25,21 +25,21 @@ VALUES
     (14, 'Cutlery Set', 'Kitchen Supplies', 34.50, 40, 4.4),
     (15, 'Cozy Throw Blanket', 'Furnishings', 24.99, 100, 4.2);
 
--- 1. write a query ordering items by price
+-- Ordering items by price
 select item_name, price
 from superstore
 order by price;
 
--- 2. write a query that will show a statistic about the items prices
+-- Show a statistic about the items prices
 select avg(price)
 from superstore;
 
--- 3. write a query that will show a statistic about price for items in the kitchen supplies category
+-- Show a statistic about price for items in the kitchen supplies category
 select avg(price)
 from superstore
 where category="Kitchen Supplies";
 
--- write a query from a question you make up. in my example show how many air purifiers are in stock
-select stock_quantity
+-- Show how many air purifiers are in stock
+select stoce sk_quantity
 from superstore
 where item_name="Air Purifier";
